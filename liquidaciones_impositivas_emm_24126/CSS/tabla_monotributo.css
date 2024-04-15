@@ -1,0 +1,17 @@
+.monotributo-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.monotributo-table th, .monotributo-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.monotributo-table th {
+    background-color: black;
+    text-align: center;
+    border-radius: 5px;
+}

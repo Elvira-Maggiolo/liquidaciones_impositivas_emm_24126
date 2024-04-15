@@ -1,0 +1,71 @@
+/* Estilos para el contenedor del formulario */
+#taxCalculatorForm {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgb(153, 153, 226);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black; /* Color del texto */
+}
+
+/* Estilos para las etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+
+/* Estilos para los campos de entrada */
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el botón */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5250f0;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1ec6f0;
+}
+
+/* Estilos para los resultados */
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para hacerlo responsive */
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    /* Estilos para la sección */
+    section {
+        text-align: center;
+        margin-top: 20px;
+        /* Añade espacio en la parte superior de la sección */
+        padding: 20px;
+        /* Añade espacio interno a la sección si es necesario */
+        background-color: lavender;
+        /* Cambia el color de fondo de la sección si es necesario */
+        border-radius: 20px;
+        border: 2px solid blueviolet;
+    }
+}

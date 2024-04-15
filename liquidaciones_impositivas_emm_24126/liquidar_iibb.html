@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELVIRA M. MAGGIOLO COMISION 24126</title>
+    <link rel="icon" href="IMG/logo.ico">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/carrousel.css">
+    <link rel="stylesheet" href="CSS/sitios_interes.css">
+    <link rel="stylesheet" href="CSS/aside.css">
+    <link rel="stylesheet" href="CSS/calcular_imp.css">
+</head>
+
+<body>
+    <header class="item header">
+        <img src="IMG/logo.jpg" alt="Logo">
+        <h1>Liquidaciones Impositivas EMM 24126</h1>
+    </header>
+
+    <section class="container">
+
+        <aside class="item left">
+            <div class="navigation-box">
+                <a href="index.html" class="box">Nuestro Estudio Contable</a>
+            </div>
+            <div class="navigation-box">
+                <a href="impuestos_provinciales.html" class="box">Impuestos Provinciales</a>
+            </div>
+            <div class="navigation-box">
+                <a href="impuestos_nacionales.html" class="box">Impuestos Nacionales</a>
+            </div>
+            <div class="navigation-box">
+                <a href="monotributistas.html" class="box">Monotributistas</a>
+            </div>
+            <div class="navigation-box">
+                <a href="responsables_inscriptos.html" class="box">Responsables Inscriptos</a>
+            </div>
+            <div class="navigation-box">
+                <a href="liquidar_iibb.html" class="box">Liquide sus Ingresos Brutos</a>
+            </div>
+            <div class="navigation-box">
+                <a href="contacto.html" class="box">No dude en contactarnos</a>
+            </div>
+            <div class="sitios-de-interes">
+                <h2>Sitios de interés:</h2>
+                <ul>
+                    <li><a href="https://www.afip.gob.ar/landing/default.asp" target="_blank">Afip</a></li>
+                    <li><a href="https://web.arba.gov.ar/" target="_blank">Arba</a></li>
+                    <li><a href="https://www.agip.gob.ar/" target="_blank">Agip</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="item contenido">
+            <h1>Liquide sus Ingresos Brutos</h1>
+            <p>Le proporcionamos nuestra calculadora para liquidar I.I.Brutos</p>
+            <section>
+                <h2>Calculadora Impuesto Ingresos Brutos Local</h2>
+                <form id="taxCalculatorForm">
+                  <label for="ventas_netas">Ventas Netas:</label>
+                  <input type="number" id="ventas_netas" name="ventas_netas"><br>
+                  <label for="alicuota_porcentaje">Alicuota (%):</label>
+                  <input type="number" id="alicuota_porcentaje" name="alicuota_porcentaje"><br>
+                  <label for="retenciones">Retenciones:</label>
+                  <input type="number" id="retenciones" name="retenciones"><br>
+                  <label for="percepciones">Percepciones:</label>
+                  <input type="number" id="percepciones" name="percepciones"><br>
+                  <label for="recaudaciones_bancarias">Recaudaciones Bancarias:</label>
+                  <input type="number" id="recaudaciones_bancarias" name="recaudaciones_bancarias"><br>
+                  <label for="saldo_favor_anterior">Saldo a Favor Anterior:</label>
+                  <input type="number" id="saldo_favor_anterior" name="saldo_favor_anterior"><br>
+                  <button type="button" id="calcularBtn">Calcular</button><br><br>
+                  <button type="button" id="limpiarBtn">Limpiar</button>
+                  <!-- Resultados -->
+                  <div id="resultado">
+                    <label for="impuesto_determinado">Impuesto Determinado:</label><br>
+                    <input type="text" id="impuesto_determinado" readonly><br><br>
+                    <label for="resultado_final">Resultado Final:</label><br>
+                    <input type="text" id="resultado_final" readonly><br>
+                  </div>
+                </form>
+              </section>
+        </main>
+
+    </section>
+    <footer class="item footer" id="idfooter"></footer>
+    <script src="javascript/header.js"></script>
+    <script src="javascript/carrousel.js"></script>
+    <script src="javascript/footer.js"></script>
+    <script src="javascript/calculo_impuestos.js"></script>
+</body>
+
+</html>

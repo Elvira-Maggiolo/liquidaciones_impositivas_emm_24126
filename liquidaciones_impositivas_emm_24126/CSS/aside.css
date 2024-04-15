@@ -1,0 +1,18 @@
+.navigation-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.navigation-box a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-box a:hover {
+    background-color: #ddd;
+}

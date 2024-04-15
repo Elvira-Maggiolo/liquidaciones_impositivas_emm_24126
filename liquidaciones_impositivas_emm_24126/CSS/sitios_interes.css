@@ -1,0 +1,27 @@
+/* Estilos para los enlaces de sitios de interés */
+.sitios-de-interes {
+    margin-top: 20px; /* Espacio superior */
+}
+
+.sitios-de-interes h2 {
+    font-size: 1.5em; /* Tamaño de la fuente del título */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.sitios-de-interes ul {
+    list-style: none; /* Quitar viñetas */
+    padding: 0; /* Eliminar el relleno */
+}
+
+.sitios-de-interes ul li {
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+
+.sitios-de-interes ul li a {
+    text-decoration:none; /* Quitar subrayado de los enlaces */
+    color:white; /* Color del texto del enlace */
+    font-size: 1em; /* Tamaño de la fuente del enlace */
+    display: block; /* Convertir enlaces en bloques */
+    background-color:black;
+    border-radius: 5%;
+}

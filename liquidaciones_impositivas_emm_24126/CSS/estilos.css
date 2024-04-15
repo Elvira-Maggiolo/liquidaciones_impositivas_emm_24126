@@ -1,0 +1,97 @@
+.container {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr;
+    grid-template-areas:
+        "header header"
+        "left contenido"
+        "footer footer";
+    grid-gap: 20px;
+    height: auto;
+}
+
+.header {
+    grid-area: header;
+    height: 80px;
+    /*border-bottom: 20px solid white; /* Agrega un borde inferior blanco */
+    background-color: black; /* Fondo negro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px;
+}
+
+.left {
+    grid-area: left;
+    width: auto;
+    text-align: center;
+    /*border-right: 20px solid white; /* Agrega un borde derecho blanco */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contenido {
+    grid-area: contenido;
+    width: auto;
+    text-align: center;
+    background-color: black; /* Fondo negro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px;
+}
+
+
+.item {
+    background-color: black;
+    padding: 10px;
+    color: white;  
+    border-radius: 10px;
+}
+
+.box {
+    background-color: slateblue;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+.footer {
+    grid-area: footer;
+    height: 100px;
+    text-align: center;
+    /*border-top: 20px solid white; /* Agrega un borde superior blanco */
+    background-color: black; /* Fondo negro */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+#idfooter {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    height: auto;
+}
+
+#idfooter img {
+    margin: 0 20px; /* Ajusta el margen horizontal entre cada imagen */
+    width: 40px; /* Establece el ancho deseado para las imágenes */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
+
+body{
+    background-color: slateblue;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+header.item img {
+    position: absolute;
+    top: 5;
+    right: 10;
+    max-width: 50px; /* Puedes ajustar este valor según el tamaño deseado */
+    height: auto;
+    border-radius: 50%;
+}
+

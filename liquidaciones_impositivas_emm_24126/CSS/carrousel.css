@@ -1,0 +1,37 @@
+/* CARROUSEL DE IMAGENES */
+
+.slider-frame {
+    width: 100%;
+    height: 200px; /* Ajusta la altura del carrusel según tus necesidades */
+    overflow: hidden;
+    position: relative; /* Añadido para manejar la animación */
+}
+
+.slider-frame ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    animation: slide 8s linear infinite; /* Añadida la animación y ajustada la duración */
+}
+
+.slider-frame ul li {
+    width: 100%; /* Ajusta el ancho de cada imagen al 100% del contenedor */
+    flex-shrink: 100; /* Evita que las imágenes se reduzcan para ajustarse */
+}
+
+.slider-frame ul li img {
+    width: 100%; /* Establece el ancho al 100% */
+    height: 100%; /* Permite que la altura se ajuste automáticamente para mantener la proporción de la imagen */
+    max-width: 100%; /* Establece el ancho máximo */
+    max-height: 100%; /* Establece la altura máxima */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
