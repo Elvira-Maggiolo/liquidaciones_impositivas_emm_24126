@@ -23,8 +23,8 @@
 .slider-frame ul li img {
     width: 100%; /* Establece el ancho al 100% */
     height: 100%; /* Permite que la altura se ajuste automáticamente para mantener la proporción de la imagen */
-    max-width: 100%; /* Establece el ancho máximo */
-    max-height: 100%; /* Establece la altura máxima */
+    max-width: 500px; /* Establece el ancho máximo */
+    max-height: none; /* Establece la altura máxima */
 }
 
 @keyframes slide {

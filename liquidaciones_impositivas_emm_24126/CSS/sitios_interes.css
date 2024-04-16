@@ -19,9 +19,9 @@
 
 .sitios-de-interes ul li a {
     text-decoration:none; /* Quitar subrayado de los enlaces */
-    color:white; /* Color del texto del enlace */
+    color:black; /* Color del texto del enlace */
     font-size: 1em; /* Tamaño de la fuente del enlace */
     display: block; /* Convertir enlaces en bloques */
-    background-color:black;
+    background-color:lavender;
     border-radius: 5%;
 }

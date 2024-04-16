@@ -52,20 +52,21 @@ button:hover {
 
 /* Estilos para hacerlo responsive */
 @media only screen and (max-width: 600px) {
-    header {
-        flex-direction: column;
-        text-align: center;
+    .formulario-container {
+        width: 90%; /* Ajusta el ancho del contenedor del formulario */
+        margin: 0 auto; /* Centra el formulario */
     }
-    /* Estilos para la sección */
+
+    /* Estilos para la sección en dispositivos móviles */
     section {
         text-align: center;
         margin-top: 20px;
-        /* Añade espacio en la parte superior de la sección */
-        padding: 20px;
-        /* Añade espacio interno a la sección si es necesario */
+        padding: 10px; /* Reduce el espacio interno en dispositivos móviles */
         background-color: lavender;
-        /* Cambia el color de fondo de la sección si es necesario */
-        border-radius: 20px;
-        border: 2px solid blueviolet;
+        border-radius: 10px;
+        border: 1px solid blueviolet;
     }
+
+    /* Estilos adicionales para los elementos del formulario en dispositivos móviles */
+    /* Añade tus estilos adicionales aquí */
 }

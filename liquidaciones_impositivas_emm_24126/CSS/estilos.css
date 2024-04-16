@@ -7,16 +7,31 @@
         "footer footer";
     grid-gap: 20px;
     height: auto;
+    border-radius: 10px;
 }
 
+/* Estilos para el encabezado */
 .header {
-    grid-area: header;
-    height: 80px;
-    /*border-bottom: 20px solid white; /* Agrega un borde inferior blanco */
-    background-color: black; /* Fondo negro */
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 10px;
+    display: flex; /* Utiliza flexbox para el diseño */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    padding: 20px; /* Añade relleno para separar el contenido del borde */
 }
+
+/* Estilos para el logo */
+.header img {
+    max-width: 80px; /* Ajusta el ancho máximo del logo */
+    height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+    border-radius: 50%;
+}
+
+/* Estilos para el título */
+.header h1 {
+    margin: 0; /* Elimina el margen por defecto del título */
+    flex-grow: 1; /* Permite que el título ocupe el espacio disponible */
+    text-align: center; /* Centra el texto */
+}
+
 
 .left {
     grid-area: left;
@@ -27,20 +42,21 @@
     padding: 10px;
 }
 
+
 .contenido {
     grid-area: contenido;
     width: auto;
     text-align: center;
-    background-color: black; /* Fondo negro */
+    background-color:lavender; /* Fondo negro */
     border-radius: 10px; /* Bordes redondeados */
     padding: 10px;
 }
 
 
 .item {
-    background-color: black;
+    background-color:lavender;
     padding: 10px;
-    color: white;  
+    color: black;  
     border-radius: 10px;
 }
 
@@ -51,7 +67,7 @@
     text-align: center;
 }
 
-h1, h2 {
+h2 {
     text-align: center;
 }
 .footer {
@@ -59,16 +75,16 @@ h1, h2 {
     height: 100px;
     text-align: center;
     /*border-top: 20px solid white; /* Agrega un borde superior blanco */
-    background-color: black; /* Fondo negro */
+    background-color: lavender; /* Fondo negro */
     border-radius: 10px; /* Bordes redondeados */
 }
 
 
 #idfooter {
-    background-color: black;
+    background-color: lavender;
     padding: 10px;
     text-align: center;
-    color: white;
+    color: black;
     height: auto;
 }
 
@@ -91,7 +107,7 @@ header.item img {
     top: 5;
     right: 10;
     max-width: 50px; /* Puedes ajustar este valor según el tamaño deseado */
-    height: auto;
+    height: none;
     border-radius: 50%;
 }
 

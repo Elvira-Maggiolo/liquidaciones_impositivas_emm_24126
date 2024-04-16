@@ -1,17 +1,34 @@
+/* Estilos para la tabla del monotributo */
 .monotributo-table {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
+    border-color: black;
 }
 
 .monotributo-table th, .monotributo-table td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
+    border-color: black;
+    font-size: 14px; /* Ajustar el tamaño del texto */
 }
 
 .monotributo-table th {
-    background-color: black;
+    background-color: slateblue;
     text-align: center;
+    border-color: black;
     border-radius: 5px;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    .monotributo-table {
+        overflow-x: auto;
+    }
+    
+    .monotributo-table th, .monotributo-table td {
+        max-width: 100px; /* Establecer un ancho máximo para las celdas */
+        white-space: none; /* para que el texto se divida en varias líneas */
+    }
 }
