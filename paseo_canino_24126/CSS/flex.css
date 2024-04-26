@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+.padre{
+  background-color: bisque;
+  border: 2px solid rgb(18, 11, 2);
+  height: auto;
+  width: 100%;            /***************80%/*/
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around; /* Espacio uniforme entre las imágenes */
+  flex-wrap: wrap; /* Permite que las imágenes se envuelvan en una nueva línea en pantallas pequeñas */
+}
+
+/*PARA HACER LAS IMAGENES RESPONSIVAS*/
+.padre img {
+  max-width: 100%; /* La imagen no superará el ancho del contenedor padre */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  margin-bottom: 10px; /* Espacio entre las imágenes (ajústalo según tus preferencias) */
+}
+
+.hijo{
+  background-color: navy;
+  color: rgb(171, 235, 92);
+  font-size: 40px;
+  text-align: center;
+  border: 2px solid rgb(18, 11, 2);
+  /*width: 200px; */
+  height: auto;         /*estaba en 100px*/
+  margin: 10px;
+  padding: 20px;
+  flex: 1; /* Los elementos secundarios ocuparán el espacio disponible de forma equitativa */
+}

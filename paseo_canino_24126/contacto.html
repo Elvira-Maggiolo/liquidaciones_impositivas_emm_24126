@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pet Shop Paseadores y Veterinaria">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Elvira Maria Maggiolo">
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+    <link rel="stylesheet" type="text/css" href="CSS/responsive.css">
+    <link rel="stylesheet" type="text/css" href="CSS/tablas_formularios.css">
+    <title>Pet Shop 24126 Veterinaria y Paseadores</title>
+    <link rel="icon" href="IMG/logo24126.ico">
+    <link rel="stylesheet" type="text/css" href="CSS/flex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- página de estilos de iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/949042685a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="header-menubar">
+            <ul>
+                <li><a href="index.html">Quienes somos</a></li>
+                <li><a href="nuestros_servicios.html">Nuestros Servicios</a></li>
+                <li><a href="tus_paseadores.html">Tus Paseadores</a></li>
+                <li><a href="donde_estamos.html">Donde estamos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1 class="animate-title">Pet Shop 24126 Veterinaria y Paseadores</h1>
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="IMG/logo24126.png" alt="Logo">
+                <span>Click patita al inicio</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <p>Para solicitar nuestros servicios personalmente, por teléfono, WhatsApp o llenando el formulario de
+                contacto</p>
+        </section>
+        <br><br>
+        <section>
+            <h2>Para contactarse con nosotros:</h2>
+            <form onsubmit="return validarFormulario()">
+                </div>
+                <fieldset class="formulario">
+                    <br><br>
+                    <label for="nom">Nombre: *</label>
+                    <input type="text" name="nom" id="nom" maxlength="30" required><br>
+                    <br><br>
+                    <label for="ape">Apellido: *</label>
+                    <input type="text" name="ape" id="ape" maxlength="30" required><br>
+                    <br><br>
+                    <label for="telefono">Teléfono: *</label>
+                    <input type="tel" id="telefono" name="telefono" required><br>
+                    <br><br>
+                    <label for="correo">E-mail *</label>
+                    <input type="email" name="correo" id="correo" placeholder="emmaei@example.com" required><br>
+                    <br><br>
+                    <label for="motivo">Motivo de consulta: *</label>
+                    <div class="opciones">
+                        <div class="opcion1">
+                            <input type="checkbox" name="motivo" id="motivo">Paseos
+                        </div>
+                        <div class="opcion2">
+                            <input type="checkbox" name="motivo" id="motivo2">Pet Shop
+                        </div>
+                        <div class="opcion3">
+                            <input type="checkbox" name="motivo" id="motivo3">Veterinaria
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="form-group">
+                        <label id="pregunta" for="seleccion">¿Querés recibir más info sobre nuestras novedades?</label>
+                        <select name="seleccion" id="seleccion">
+                            <option value="si">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <label for="comentarios">Escriba su consulta: *</label>
+                    <br><br>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="10"
+                        placeholder="Escriba su consulta aquí..."></textarea>
+                    <br><br>
+                    <p>*Campos Obligatorios</p>
+                    <br>
+                    <input type="submit" value="Enviar Datos"><br>
+                    <input type="reset" value="Borrar Datos">
+                </fieldset>
+            </form>
+        </section>
+        <br><br>
+
+        <section>
+            <div class="video-container">
+                <iframe id="video-player" width="680" height="383"
+                    src="https://www.youtube.com/embed/cf-3Po68Ffk?start=1217&autoplay=1"
+                    title="Música Relajante Para Calmar Mascotas Agitados y Nerviosos ♥♥♥ Sueño Tranquilo y Profundo"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <div class="flecha-derecha">
+        <a href="index.html"><img src="IMG/flecha derecha.png" alt="Flecha derecha"></a>
+    </div>
+
+    <footer id="idfooter"></footer>
+
+    <script src="JS/footer.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="JS/alerta.js"></script>
+    <script src="JS/videos.js"></script>
+
+
+
+</body>
+
+</html>

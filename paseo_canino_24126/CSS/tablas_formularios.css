@@ -1,0 +1,227 @@
+
+/* Contenedor de la tabla */
+.table-container {
+    width: 100%;
+    max-width: 800px; /* Ajusta según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor */
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+}
+
+/* Tabla */
+table {
+    border-collapse: collapse;
+    width: 100%; /* La tabla ocupa el 100% del ancho del contenedor */
+    overflow-x: auto;
+}
+
+/* Encabezados de tabla */
+th, td {
+    border: 1px solid navy;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilo para encabezados de tabla */
+th {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para celdas de tabla */
+td {
+    background-color: tomato;
+}
+
+/* Imágenes en la tabla */
+.tabla-imagen {
+    width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 50%; /* Establece forma redonda */
+}
+
+/* Media query para ajustar la tabla en dispositivos pequeños */
+@media (max-width: 600px) {
+    th, td {
+        padding: 4px; /* Reducir el relleno en dispositivos pequeños */
+    }
+    
+    .tabla-imagen {
+        width: 80px; /* Ajustar tamaño de imágenes en dispositivos pequeños */
+    }
+}
+
+
+
+/* Estilos para el campo de la clave solicitud paseo */
+#clave {
+    padding: 8px;
+    border: 2px solid hsl(0, 88%, 51%);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    max-width: 400px;
+    box-sizing: border-box; /* Para incluir el padding en el ancho total */
+}
+
+/* Estilos generales para el formulario solicitar paseo */
+#solicitar-paseo-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para el botón de enviar */
+#solicitar-paseo-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Estilos para el botón de limpiar */
+#solicitar-paseo-form input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Estilos para los labels */
+#solicitar-paseo-form label {
+    font-weight: bold;
+}
+
+/***************************************************************************************/
+/* ESTILO PARA FORMULARIO CONTACTO*/
+.full-width-container {
+    width: 80%;
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+fieldset {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Ajusta los estilos de los campos de formulario de contacto*/
+/* Ajusta los estilos de los campos de formulario de contacto */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    max-width: 100%; /* Cambia a un porcentaje para mayor flexibilidad */
+    margin: 5px 0; /* Ajusta el margen vertical entre campos */
+    padding: 5px; /* Ajusta el padding para campos más pequeños */
+    border: 1px solid hsl(0, 88%, 51%);
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: block;
+    box-sizing: border-box;
+    width: 100%; /* Ajusta para que ocupe todo el espacio disponible */
+}
+
+
+
+/* Estilos para botones de formulario de contacto */
+input[type="submit"],  /*PARA ENVIAR DATOS*/
+input[type="reset"] {   /*PARA BORRAR DATOS
+    width: 80%; /* Cambia el ancho a 100% */
+    padding: 10px;
+    margin: 20px 0; /* Reduce el margen para más espaciado */
+    background-color: tomato;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: darkorange;
+    border-radius: 5px;
+    margin: 50px;
+}
+
+
+
+.formulario label{
+    text-align: center;
+    padding: auto;                  /*padding-left:0.75rem*/
+    position: relative;
+    right: 0.1rem;
+  }
+  
+  .formulario {
+    width: 50%; /* Cambia a 60% para un formulario más estrecho */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    border: none;
+
+}
+
+
+  
+.formulario select {
+    width: 50%; /* Cambia a 50% para hacer el select más pequeño */
+    text-align: center; /* Centra el texto del select */
+}
+
+
+  /* SOBRE SI QUERES RECIBIR NOVEDADES NUESTRAS EN EL FORMULARIO:*/
+  .formulario #pregunta {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 2rem; /* Mantén el margen inferior si es necesario */
+    width: 100%; /* Ajusta el ancho para que ocupe todo el espacio disponible */
+}
+
+
+  .opciones{
+    padding-top: 1rem;
+  }
+
+  .opcion1{
+    display: inline-block;
+    margin-right: 2rem;
+  }
+  
+  .opcion2{
+    display: inline-block;
+    margin-right: 2rem;
+  }
+  
+  .opcion3{
+    display: inline-block;
+  }
+  
+  .opcion1 input{
+    margin-right: 0.5rem;
+  }
+  
+  .opcion2 input{
+    margin-right: 0.5rem;
+  }
+  
+  .opcion3 input{
+    margin-right: 0.5rem;
+  }
+  
+  #video-player{
+    border: 0;
+  }

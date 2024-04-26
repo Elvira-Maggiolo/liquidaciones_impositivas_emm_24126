@@ -1,0 +1,82 @@
+/* Archivo: responsive.css */
+
+/* Estilos para dispositivos con ancho de pantalla menor o igual a 768px (tablets y móviles) */
+@media (max-width: 768px) {
+    /* Ajusta los estilos para diferentes secciones de tu página */
+    .header {
+        /* Estilos para el header */
+        background-color:coral;
+    }
+    
+    .footer {
+        /* Estilos para el footer */
+        font-size: 14px;
+    } 
+    
+    /* Otros estilos para diferentes partes del HTML */
+}
+
+
+
+/* Estilos para dispositivos con ancho de pantalla menor o igual a 480px (móviles) */
+@media (max-width: 480px) {
+    /* Ajusta los estilos para diferentes secciones de tu página */
+    .header {
+        /* Estilos adicionales para el header en pantallas pequeñas */
+        background-color: aquamarine;
+    }
+    
+    /* Otros estilos para diferentes partes del HTML */
+    .footer {
+        /* Estilos para el footer */
+        font-size: 14px;
+    }
+
+}
+
+/* Estilos para hacer que el video sea responsivo */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Establece la relación de aspecto de 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* El ancho es del 100% del contenedor */
+    height: 100%; /* La altura es del 100% del contenedor */
+    border: none;
+}
+
+/* Estilos para hacer que la imagen sea responsiva */
+.responsive-iframe img {
+    width: 100%; /* El ancho es del 100% del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción de la imagen */
+}
+
+@media (max-width: 600px) {
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+}
+
+/*PARA FORMULARIO DE CONTACTO*/
+@media (max-width: 768px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        max-width: 100%;
+        padding: 5px;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+        padding: 5px;
+    }
+}

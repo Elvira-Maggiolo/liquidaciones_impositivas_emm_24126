@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pet Shop Paseadores y Veterinaria">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Elvira Maria Maggiolo">
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+    <link rel="stylesheet" type="text/css" href="CSS/responsive.css">
+    <link rel="stylesheet" type="text/css" href="CSS/tablas_formularios.css">
+    <title>Pet Shop 24126 Veterinaria y Paseadores</title>
+    <link rel="icon" href="IMG/logo24126.ico">
+    <link rel="stylesheet" type="text/css" href="CSS/flex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- página de estilos de iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/949042685a.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+
+    <header>
+        <nav class="header-menubar">
+            <ul>
+                <li><a href="index.html">Quienes somos</a></li>
+                <li><a href="nuestros_servicios.html">Nuestros Servicios</a></li>
+                <li><a href="tus_paseadores.html">Tus Paseadores</a></li>
+                <li><a href="donde_estamos.html">Donde estamos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1 class="animate-title">Pet Shop 24126 Veterinaria y Paseadores</h1>
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="IMG/logo24126.png" alt="Logo">
+                <span>Click patita al inicio</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Tus Paseadores</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Días de Paseo</th>
+                            <th>Horario</th>
+                            <th>Su foto</th>
+                            <th>Su recorrido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Betty</td>
+                            <td>Lunes a Viernes</td>
+                            <td>9:00 - 13:00</td>
+                            <td><img src="IMG/paseadora1 betty.jpg" alt="Betty" class="tabla-imagen"></td>
+                            <td>Por Parque Sarmiento</td>
+                        </tr>
+                        <tr>
+                            <td>Imanol</td>
+                            <td>Lunes a Sábado</td>
+                            <td>8:00 - 12:00</td>
+                            <td><img src="IMG/imanol paseador2.jpg" alt="Imanol" class="tabla-imagen"></td>
+                            <td>Por alrededores del Barrio</td>
+                        </tr>
+                        <tr>
+                            <td>Natalia</td>
+                            <td>Lunes-Miércoles y Viernes</td>
+                            <td>8:00 - 14:00</td>
+                            <td><img src="IMG/paseadora3 Natalia.jpg" alt="Natalia" class="tabla-imagen"></td>
+                            <td>Por Parque Saavedra</td>
+                        </tr>
+                        <tr>
+                            <td>Damian</td>
+                            <td>Lunes a Domingo</td>
+                            <td>18:00 a 21:00</td>
+                            <td><img src="IMG/paseador4Damian.jpg" alt="Damian" class="tabla-imagen"></td>
+                            <td>Por alrededores del Barrio</td>
+                        </tr>
+                        <tr>
+                            <td>Leo</td>
+                            <td>Martes y Jueves</td>
+                            <td>15:00 a 18:00</td>
+                            <td><img src="IMG/leo messi.jfif" alt="Leo" class="tabla-imagen"></td>
+                            <td>Por Parque Sarmiento</td>
+                        </tr>
+                        <!-- Puedes agregar más filas según sea necesario -->
+                    </tbody>
+                </table>
+            </div>
+            <section>
+                <br><br>
+                <h2>Solicitar Paseo</h2><br><br>
+                <form id="solicitar-paseo-form" action="/procesar_solicitud" method="POST">
+                    <label for="clave">Clave Cliente:</label>
+                    <input type="password" id="clave" name="clave" required><br><br>
+
+                    <label for="nombre_cliente">Nombre del Cliente:</label>
+                    <input type="text" id="nombre_cliente" name="nombre_cliente" required><br><br>
+
+                    <label for="nombre_mascota">Nombre de la Mascota:</label>
+                    <input type="text" id="nombre_mascota" name="nombre_mascota" required><br><br>
+
+                    <label for="dia_paseo">Día de Paseo:</label>
+                    <select id="dia_paseo" name="dia_paseo" required>
+                        <option value="Lunes">Lunes</option>
+                        <option value="Martes">Martes</option>
+                        <option value="Miercoes">Miercoles</option>
+                        <option value="Jueves">Jueves</option>
+                        <option value="Viernes">Viernes</option>
+                        <option value="Sabado">Sabado</option>
+                        <option value="Domingo">Domingo</option>
+                        <!-- Agrega los demás días según necesites -->
+                    </select><br><br>
+
+                    <label for="horario_paseo">Horario de Paseo:</label>
+                    <input type="text" id="horario_paseo" name="horario_paseo" required><br><br>
+
+                    <label for="paseador">Paseador:</label>
+                    <select id="paseador" name="paseador" required>
+                        <option value="Betty">Betty</option>
+                        <option value="Imanol">Imanol</option>
+                        <option value="Natalia">Natalia</option>
+                        <option value="Damian">Damian</option>
+                        <option value="Leo">Leo</option>
+                        <!-- Agrega los demás paseadores según necesites -->
+                    </select><br><br>
+
+                    <input type="submit" value="Solicitar Paseo"><br><br>
+                    <input type="reset" value="Limpiar">
+                </form><br><br>
+            </section>
+
+            <section class="responsive-iframe">
+                <div class="video-container">
+                    <iframe id="video-player" width="680" height="383" src="//www.youtube.com/embed/fmTtEYv-0CY"
+                        title="El paseador de perros: un profesional solicitado" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <section>
+                <div><br><br>
+                    <img src="IMG/goldenadulto.png" alt="Golden Adulto"
+                        style="display: inline-block; width: 300px; height: 500px; border-radius: 50%;"><img
+                        src="IMG/perroygato.png" alt="colibrí"
+                        style="display: inline-block; width: 300px; height: 500px; border-radius: 50%;">
+                </div>
+            </section>
+                <div class="video-container">
+                    <iframe id="video-player" width="680" height="383"
+                        src="https://www.youtube.com/embed/cf-3Po68Ffk?start=1217&autoplay=1"
+                        title="Música Relajante Para Calmar Mascotas Agitados y Nerviosos ♥♥♥ Sueño Tranquilo y Profundo"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+
+    </main>
+
+    <div class="flecha-derecha">
+        <a href="donde_estamos.html"><img src="IMG/flecha derecha.png" alt="Flecha derecha"></a>
+    </div>
+
+    <footer id="idfooter"></footer>
+
+    <script src="JS/footer.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="JS/videos.js"></script>
+
+
+</body>
+
+</html>

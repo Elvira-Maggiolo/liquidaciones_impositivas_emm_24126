@@ -1,0 +1,365 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animate-title {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header-logo {
+    text-align: right;
+    margin: 1%;
+  }
+  
+  .header-logo img {
+    max-width: 100px; /* Ajusta el tamaño máximo del logo según tus necesidades */
+    height: auto;
+    margin-left: 3%;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    animation: spin 4s linear forwards; /* Inicia la animación de giro, dos vueltas en 4 segundos */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); } /* Inicia la rotación desde 0 grados */
+    100% { transform: rotate(720deg); } /* Completa la rotación volviendo a 720 grados (dos vueltas) */
+}
+
+
+  
+  p {
+    text-align: center;
+    color: #000080
+    /* ES EL COLOR DE LOS textos de PARRAFOS */
+  }
+
+  .grande-px{font-size: 24px;}
+  html {
+    font-size: 16px;
+    height: 100%;
+
+  }
+
+  h1{
+    color: navy;
+  }
+
+  h2{
+    color: navy;
+    text-align: center;
+  }
+
+  body {
+    /* width: 100%;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    border: 2px solid rgb(18, 11, 2);
+    /* Añade el borde al body */
+    background-color: bisque;
+    /* Color de fondo para el body */
+  }
+  
+  header,
+  main {
+    max-width: 100%;
+    /* Ajusta el ancho máximo según tus necesidades 100% */
+    min-height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid rgb(18, 11, 2);
+      /* Añade el borde a header, main, y footer */
+  
+  }
+  
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    background-color: hsl(74, 74%, 74%);
+    border: 2px solid rgb(18, 11, 2);
+  }
+
+  .header-logo {
+    text-align: right;
+  
+  }
+  
+  
+#idfooter {
+  border: 2px solid rgb(18, 11, 2);
+  width: 100%;
+  box-sizing: border-box;
+  background-color: hsl(74, 74%, 74%);
+  padding: 20px;
+  text-align: center;
+  color: navy;
+}
+
+#idfooter img {
+  margin: 5px; /* Ajusta el margen alrededor de cada imagen */
+  width: 30px; /* Establece el ancho deseado para las imágenes */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
+.footer-icon {
+  margin: 5px; /* Ajusta el margen alrededor de cada imagen */
+  width: 30px; /* Establece el ancho deseado para las imágenes */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+    
+}
+
+
+  .header-menubar  a {
+    padding: 2px;
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+    text-decoration: none;
+    color:navy;
+    background-color: rgb(195, 218, 22);
+    text-align: center;
+    font-weight: bold;
+    font-size: normal;
+    font-style: italic;
+    border: 1px solid;
+    border-radius: 5px; 
+    margin-bottom: 5px; 
+    
+  }
+  
+  .header-menubar a:hover {
+    background-color: #5b9655; /* color de fondo al pasar el mouse */
+}
+  
+  /* Estilos para la sección */
+  section {
+    text-align: center;
+    margin-top: 5px;
+    /* Añade espacio en la parte superior de la sección */
+    padding: 20px;
+    /* Añade espacio interno a la sección si es necesario */
+    background-color: bisque;
+    /* Cambia el color de fondo de la sección si es necesario */
+  }
+
+.responsive-iframe {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px; /* Ajusta el espacio inferior */
+}
+
+.responsive-iframe iframe,
+.responsive-iframe img {
+  display: block;
+  margin: 0 auto; /* Centra horizontalmente */
+}
+
+
+.map-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 75%; /* Proporción para mantener la relación de aspecto del mapa */
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* para darle color a las listar no ordenadas (ul) y a las ordenadas (ol) y sacarle numeros y viñetas*/
+
+ul {
+    color: navy;
+    list-style: none;
+  }
+
+  ol {
+    color: navy;
+    list-style: none;
+  }
+
+  
+
+  /*CARROUSEL DE IMAGENES**/
+  .slider-frame {
+    width: 100%;
+    height: 100%;              /* Ajusta la altura del carrusel según tus necesidades */
+    /*overflow: hidden;*/
+}
+
+.slider-frame ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: transform 10s ease;  /* Hacemos la transición más lenta */
+    animation: slide 20s linear infinite; /* Hacemos la animación más lenta y continua hacia la izquierda */
+}
+
+.slider-frame ul li img {
+  width: 100%; /* Establece el ancho al 100% */
+  height: 100%; /* Permite que la altura se ajuste automáticamente para mantener la proporción de la imagen */
+  max-width: 100%; /* Establece el ancho máximo */
+  max-height: 100%; /* Establece la altura máxima */
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.flecha-derecha {
+  position: fixed;
+  top: 50%;
+  right: 20px; /* Ajusta el valor según sea necesario para la posición deseada */
+  transform: translateY(-50%);
+}
+
+/*BOTON PARA VOLVER AL INICIO DE LA PAGINA*/
+.arrow-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: tomato;
+  color: #fff;
+  padding: 5px 10px; /* Ajusta el tamaño del padding para hacer el botón más pequeño */
+  border-radius: 5px;
+}
+
+.arrow-to-top a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.arrow-to-top a:hover {
+  text-decoration: underline;
+}
+
+/*boton del logo patita*/
+.header-logo a span {
+  display: inline-block;
+  padding: 3px 8px;
+  background-color: tomato;
+  color: #fff;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  text-decoration: none; /* Para quitar el subrayado que se aplica por defecto a los enlaces */
+}
+.quienes-somos {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.quienes-somos h2 {
+  text-align: center;
+}
+
+.quienes-somos .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.quienes-somos .content p {
+  margin-bottom: 20px;
+}
+
+/* Media query para ajustar estilos en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .quienes-somos {
+      padding: 10px;
+      max-width: 90%;
+  }
+
+  .quienes-somos .content p {
+      font-size: 0.9em; /* Reducir el tamaño del texto para pantallas más pequeñas */
+  }
+}
+
+
+/*-----------------FOOTER Y --REDES SOCIALES-----------------------------------*/
+
+.redsoc {
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 15px;
+  
+}
+
+.redsoc a {
+  margin:0px 5px;
+  font-size: 1.5vw;
+  align-items:center;
+  
+}
+
+.footerIndex {
+  height: 80px;
+  width: auto;
+  margin-top: 30px;
+}
+
+.footerIndex p {
+  font-size: x-large;
+  font-weight: bold;
+  margin: 5px
+}
+
+
+.redsoc p{
+  text-align: center;
+}
+
+#idfooter {
+  border: 2px solid rgb(18, 11, 2);
+  width: 100%;
+  box-sizing: border-box;
+  background-color: hsl(74, 74%, 74%);
+  padding: 20px;
+  text-align: center;
+  color: navy;
+}
+
+#idfooter img {
+  margin: 5px; /* Ajusta el margen alrededor de cada imagen */
+  width: 30px; /* Establece el ancho deseado para las imágenes */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
+.footer-icon {
+margin: 5px; /* Ajusta el margen alrededor de cada imagen */
+width: 30px; /* Establece el ancho deseado para las imágenes */
+height: auto; /* Permite que la altura se ajuste automáticamente */
+{  
